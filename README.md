@@ -1,4 +1,4 @@
-# All Candlestick Pattern Indicators 所有技术形态指标
+# All Candlestick Pattern Indicators 所有技术形态指标 Translated indonesian
 This is an enhanced version of candlestick pattern indicators in `TradingView`. Compared with the built-in one, it is more powerful since it has:  
 ✔️ optimized codes to run faster  
 ✔️ lots of filter options to see only your favorite indicators  
