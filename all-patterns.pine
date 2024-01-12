@@ -152,7 +152,7 @@ if C_OnNeckBearish and OnNeckInput and showBearishSignal
     var msg_EN = "On Neck\nOn Neck adalah pola kelanjutan dua garis yang terdapat dalam tren turun. Candle pertama panjang dan berwarna merah, candle kedua pendek dan badannya berwarna hijau. Harga penutupan candle kedua mendekati atau sama dengan harga penutupan candle kedua. harga terendah candle pertama. Pola ini mengisyaratkan kelanjutan tren turun, dan menembus titik terendah kandil hijau terkadang dianggap sebagai konfirmasi."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "ON"
+    var label_EN = "ON sell"
     var label_CN = "不知道咋翻译"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -167,7 +167,7 @@ if C_RisingWindowBullish and RisingWindowInput and showBullishSignal
     var msg_EN = "Rising Window\nRising Window adalah pola kelanjutan bullish dua candle yang terbentuk selama tren naik. Kedua candle dalam pola tersebut dapat berupa jenis apa pun kecuali Doji Empat Harga. Karakteristik paling penting dari pola ini adalah harga gap antara harga tertinggi candle pertama dan harga terendah candle kedua. Celah (jendela) antara dua batang menandakan support terhadap tekanan jual."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "RW"
+    var label_EN = "RW buy"
     var label_CN = "跳空上涨"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -182,7 +182,7 @@ if C_FallingWindowBearish and FallingWindowInput and showBearishSignal
     var msg_EN = "Falling Window\nFalling Window adalah pola kelanjutan bearish dua candle yang terbentuk selama tren turun. Kedua candle dalam pola tersebut dapat berupa jenis apa pun, kecuali Doji Empat Harga. Karakteristik paling penting dari pola ini adalah a gap harga antara harga terendah candle pertama dan harga tertinggi candle kedua, Adanya gap (window) ini berarti tren bearish diperkirakan akan terus berlanjut."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "FW"
+    var label_EN = "FW sell"
     var label_CN = "跳空下跌"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -197,7 +197,7 @@ if C_FallingThreeMethodsBearish and FallingThreeMethodsInput and showBearishSign
     var msg_EN = "Metode Tiga Jatuh\nMetode Tiga Jatuh adalah pola bearish lima lilin yang menandakan kelanjutan dari tren turun yang ada. Lilin pertama panjang dan merah, diikuti oleh tiga lilin hijau pendek dengan badan di dalam kisaran lilin pertama. Yang terakhir Lilin ini juga berwarna merah dan panjang dan ditutup di bawah penutupan lilin pertama. Lilin kelima yang sangat bearish ini mengisyaratkan bahwa kenaikan tidak dapat membalikkan tren turun sebelumnya dan bahwa penurunan telah mendapatkan kembali kendali atas pasar."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "FTM"
+    var label_EN = "FTM sell"
     var label_CN = "下降三法"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -212,7 +212,7 @@ if C_RisingThreeMethodsBullish and RisingThreeMethodsInput and showBullishSignal
     var msg_EN = "Metode Rising Three\nMetode Rising Three adalah pola bullish lima kandil yang menandakan kelanjutan dari tren naik yang ada. Kandil pertama panjang dan hijau, diikuti oleh tiga kandil merah pendek dengan badan di dalam kisaran kandil pertama. Yang terakhir Lilin ini juga berwarna hijau dan panjang dan ditutup di atas penutupan lilin pertama. Lilin kelima yang sangat bullish ini mengisyaratkan bahwa beruang tidak dapat membalikkan tren naik sebelumnya dan bahwa sapi jantan telah mendapatkan kembali kendali atas pasar."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "RTM"
+    var label_EN = "RTM buy"
     var label_CN = "上升三法"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -227,7 +227,7 @@ if C_TweezerTopBearish and TweezerTopInput and showBearishSignal
     var msg_EN = "Tweezer Top\nTweezer Top adalah pola dua candle yang menandakan potensi pembalikan bearish. Pola ini ditemukan selama tren naik. Candle pertama panjang dan hijau, candle kedua berwarna merah, dan tingginya hampir identik dengan high Nilai tertinggi yang hampir sama, bersama dengan arah terbalik, mengisyaratkan bahwa penurunan mungkin akan mengambil alih pasar."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "TT"
+    var label_EN = "TT sell"
     var label_CN = "平顶"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -242,7 +242,7 @@ if C_TweezerBottomBullish and TweezerBottomInput and showBullishSignal
     var msg_EN = "Tweezer Bottom\nTweezer Bottom adalah pola dua lilin yang menandakan potensi pembalikan bullish. Pola ini ditemukan selama tren turun. Lilin pertama panjang dan berwarna merah, lilin kedua berwarna hijau, titik terendahnya hampir identik dengan titik terendah dari posisi terendah yang hampir sama dan arah terbalik mengisyaratkan bahwa kenaikan mungkin akan mengambil alih pasar."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "TB"
+    var label_EN = "TB buy"
     var label_CN = "平底"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -257,7 +257,7 @@ if C_DarkCloudCoverBearish and DarkCloudCoverInput and showBearishSignal
     var msg_EN = "Dark Cloud Cover\nDark Cloud Cover adalah pola kandil pembalikan bearish dua kandil yang ditemukan dalam tren naik. Kandil pertama berwarna hijau dan memiliki badan lebih besar dari rata-rata. Kandil kedua berwarna merah dan dibuka di atas harga tertinggi kandil sebelumnya, menciptakan celah, dan kemudian ditutup di bawah titik tengah candle pertama.Pola tersebut menunjukkan kemungkinan pergeseran momentum dari atas ke bawah, yang mengindikasikan bahwa pembalikan mungkin akan segera terjadi."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "DCC"
+    var label_EN = "DCC sell"
     var label_CN = "乌云压顶"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -272,7 +272,7 @@ if C_DownsideTasukiGapBearish and DownsideTasukiGapInput and showBearishSignal
     var msg_EN = "Downside Tasuki Gap\nDownside Tasuki Gap adalah pola tiga candle yang ditemukan dalam tren turun yang biasanya mengisyaratkan berlanjutnya tren turun. Candle pertama panjang dan berwarna merah, diikuti oleh candle merah yang lebih kecil dengan harga pembukaannya yang memiliki gap di bawah tubuh candle sebelumnya. Candle ketiga berwarna hijau dan menutup di dalam celah yang diciptakan oleh dua candle pertama, tidak dapat menutupnya sepenuhnya. Ketidakmampuan banteng untuk menutup celah tersebut mengisyaratkan bahwa tren turun mungkin akan berlanjut."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "DTG"
+    var label_EN = "DTG sell"
     var label_CN = "倾盆大雨"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -287,7 +287,7 @@ if C_UpsideTasukiGapBullish and UpsideTasukiGapInput and showBullishSignal
     var msg_EN = "Upside Tasuki Gap\nUpside Tasuki Gap adalah pola tiga candle yang ditemukan dalam tren naik yang biasanya mengisyaratkan kelanjutan tren naik. Candle pertama panjang dan berwarna hijau, diikuti oleh candle hijau yang lebih kecil dengan harga pembukaannya yang gap di atas harga pembukaannya. tubuh candle sebelumnya. Lilin ketiga berwarna merah dan menutup di dalam celah yang diciptakan oleh dua lilin pertama, tidak dapat menutupnya sepenuhnya. Ketidakmampuan beruang untuk menutup celah tersebut mengisyaratkan bahwa tren naik mungkin berlanjut."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "UTG"
+    var label_EN = "UTG buy"
     var label_CN = "旭日东升"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -302,7 +302,7 @@ if C_EveningDojiStarBearish and EveningDojiStarInput and showBearishSignal
     var msg_EN = "Evening Doji Star\nPola kandil ini adalah variasi dari pola Evening Star. Pola ini bersifat bearish dan melanjutkan tren naik dengan hari kandil hijau bertubuh panjang. Kemudian diikuti oleh celah dan kandil Doji dan diakhiri dengan ke bawah Penutupan akan berada di bawah titik tengah hari pertama. Pola ini lebih bearish dibandingkan pola bintang malam biasa karena adanya Doji."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "EDS"
+    var label_EN = "EDS sell"
     var label_CN = "黄昏十字星"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -317,7 +317,7 @@ if C_DojiStarBearish and DojiStarInput and showBearishSignal
     var msg_EN = "Doji Star\nIni adalah pola kandil pembalikan bearish yang ditemukan dalam tren naik dan terdiri dari dua kandil. Yang pertama adalah kandil hijau panjang, diikuti oleh kandil Doji (kecuali Doji 4 Harga) yang dibuka di atas badan kandil pertama satu, menciptakan celah. Ini dianggap sebagai sinyal pembalikan dengan konfirmasi pada hari perdagangan berikutnya."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "DS"
+    var label_EN = "DS tahan"
     var label_CN = "十字星"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -332,7 +332,7 @@ if C_DojiStarBullish and DojiStarInput and showBullishSignal
     var msg_EN = "Doji Star\nIni adalah pola kandil pembalikan naik yang ditemukan dalam tren turun dan terdiri dari dua kandil. Yang pertama adalah kandil merah panjang, diikuti oleh kandil Doji (kecuali Doji 4 Harga) yang dibuka di bawah badan kandil pertama satu, menciptakan celah. Ini dianggap sebagai sinyal pembalikan dengan konfirmasi pada hari perdagangan berikutnya."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "DS"
+    var label_EN = "DS tahan"
     var label_CN = "十字星"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -347,7 +347,7 @@ if C_MorningDojiStarBullish and MorningDojiStarInput and showBullishSignal
     var msg_EN = "Morning Doji Star\nPola kandil ini adalah variasi dari pola Morning Star. Pola pembalikan naik tiga hari, yang terdiri dari tiga kandil akan terlihat seperti ini: Yang pertama adalah kandil merah berbadan panjang yang memperpanjang tren turun saat ini Berikutnya adalah Doji yang memberikan gap ke bawah pada pembukaan. Setelah itu muncul candle hijau bertubuh panjang, yang memberikan gap ke atas pada pembukaan dan ditutup di atas titik tengah tubuh hari pertama. Ini lebih bullish daripada bintang pagi biasa pola karena keberadaan Doji."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "MDS"
+    var label_EN = "MDS buy"
     var label_CN = "晨星十字"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -362,7 +362,7 @@ if C_PiercingBullish and PiercingInput and showBullishSignal
     var msg_EN = "Piercing\nPiercing adalah pola kandil pembalikan naik dua kandil yang ditemukan dalam tren turun. Kandil pertama berwarna merah dan memiliki badan lebih besar dari rata-rata. Kandil kedua berwarna hijau dan terbuka di bawah titik rendah kandil sebelumnya, menciptakan celah, dan kemudian ditutup di atas titik tengah candle pertama.Pola tersebut menunjukkan kemungkinan pergeseran momentum dari bawah ke atas, yang mengindikasikan bahwa pembalikan mungkin akan segera terjadi."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "P"
+    var label_EN = "P buy"
     var label_CN = "曙光初现"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -378,7 +378,7 @@ if C_HammerBullish and HammerInput and showBullishSignal
     var msg_EN = "Hammer\nHammer candlestick terbentuk ketika sekuritas bergerak lebih rendah setelah pembukaan, namun terus menguat hingga penutupan di atas terendah intraday. Candlestick yang tersisa akan terlihat seperti persegi yang dilekatkan pada gambar seperti tongkat panjang. Candlestick ini adalah disebut Hammer jika terjadi pada saat penurunan."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "H"
+    var label_EN = "H buy"
     var label_CN = "锤子"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -393,7 +393,7 @@ if C_HangingManBearish and HangingManInput and showBearishSignal
     var msg_EN = "Hanging Man\nKetika sekuritas tertentu bergerak lebih rendah setelah pembukaan, namun terus menguat hingga penutupan di atas terendah intraday, kandil Hanging Man akan terbentuk. Kandil tersebut akan menyerupai persegi, ditempelkan pada figur seperti tongkat yang panjang. Itu disebut sebagai Manusia Gantung jika kandil terbentuk di muka."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "HM"
+    var label_EN = "HM sell"
     var label_CN = "上吊线"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -409,7 +409,7 @@ if C_ShootingStarBearish and ShootingStarInput and showBearishSignal
     var msg_EN = "Shooting Star\nPola satu hari ini dapat muncul selama tren naik dan membuka harga tinggi, sementara ditutup mendekati harga pembukaannya. Pola ini diperdagangkan jauh lebih tinggi juga. Sifatnya bearish, namun tampak seperti Palu Terbalik."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "SS"
+    var label_EN = "SS sell"
     var label_CN = "流星"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -425,7 +425,7 @@ if C_InvertedHammerBullish and InvertedHammerInput and showBullishSignal
     var msg_EN = "Inverted Hammer\nJika berada dalam tren menurun, maka harga pembukaannya lebih rendah. Ketika akhirnya diperdagangkan lebih tinggi, namun ditutup mendekati harga pembukaannya, maka akan terlihat seperti versi terbalik dari Hammer Candlestick. Ini adalah pola pembalikan bullish satu hari."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "IH"
+    var label_EN = "IH buy"
     var label_CN = "倒锤子"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -441,7 +441,7 @@ if C_MorningStarBullish and MorningStarInput and showBullishSignal
     var msg_EN = "Morning Star\nPola pembalikan bullish tiga hari, yang terdiri dari tiga kandil akan terlihat seperti ini: Yang pertama adalah kandil merah berbadan panjang yang memperpanjang tren turun saat ini. Berikutnya adalah kandil tengah pendek yang memiliki celah ke bawah pada Setelah itu muncullah candle hijau bertubuh panjang, yang memiliki celah di atas pada pembukaan dan penutupan di atas titik tengah tubuh hari pertama."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "MS"
+    var label_EN = "MS buy"
     var label_CN = "早晨之星"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -457,7 +457,7 @@ if C_EveningStarBearish and EveningStarInput and showBearishSignal
     var msg_EN = "Evening Star\nPola kandil ini bearish dan melanjutkan tren naik dengan hari kandil hijau berbadan panjang. Pola ini kemudian diikuti oleh hari kandil berjeda dan berbadan kecil, dan diakhiri dengan penutupan ke bawah. Penutupan akan berada di bawah titik tengah hari pertama."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "ES"
+    var label_EN = "ES sell"
     var label_CN = "黄昏之星"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -471,7 +471,7 @@ if C_MarubozuWhiteBullish and MarubozuWhiteInput and showBullishSignal
     var msg_EN = "Marubozu White\nMarubozu White Candle adalah kandil yang tidak memiliki bayangan yang memanjang dari badan kandilnya baik pada pembukaan maupun penutupan. Marubozu dalam bahasa Jepang berarti “potong pendek” atau “potong dekat.” Sumber lain mungkin menyebutnya sebagai Lilin Kepala Botak atau Cukur."
     var msg_CN = "光头光脚阳线\n光头光脚阳线就是一根大阳线，干就完了！"
 
-    var label_EN = "MW"
+    var label_EN = "MW buy"
     var label_CN = "光头光脚阳线"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -485,7 +485,7 @@ if C_MarubozuBlackBearish and MarubozuBlackInput and showBearishSignal
     var msg_EN = "Marubozu Black\nIni adalah kandil yang tidak memiliki bayangan, yang memanjang dari kandil berbadan merah pada pembukaan, penutupan, atau bahkan keduanya. Dalam bahasa Jepang, namanya berarti “potong pendek” atau “potong dekat. ” Candlestick juga bisa disebut sebagai Kepala Botak atau Kepala Cukur."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "MB"
+    var label_EN = "MB sell"
     var label_CN = "光头光脚阴线"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -499,7 +499,7 @@ if C_Doji and not C_DragonflyDoji and not C_GravestoneDojiOne and DojiInput and 
     var msg_EN = "Doji\nKetika pembukaan dan penutupan suatu sekuritas pada dasarnya sama satu sama lain, maka terbentuklah kandil doji. Panjang bayangan atas dan bawah dapat berbeda-beda, menyebabkan kandil yang tersisa menyerupai salib, salib terbalik , atau tanda plus. Lilin Doji menunjukkan keragu-raguan pembeli-penjual dalam semacam tarik-menarik. Saat harga bergerak di atas atau di bawah level pembukaan selama sesi, penutupan berada pada atau dekat level pembukaan ."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "D"
+    var label_EN = "D tahan"
     var label_CN = "十字线"
 
     _getNeutralLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -512,7 +512,7 @@ if C_GravestoneDojiBearish and GravestoneDojiInput and showBearishSignal
     var msg_EN = "Gravestone Doji\nSaat doji berada pada atau mendekati titik terendah hari itu, garis doji akan berkembang."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "GD"
+    var label_EN = "GD sell"
     var label_CN = "墓碑十字"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -525,7 +525,7 @@ if C_DragonflyDojiBullish and DragonflyDojiInput and showBullishSignal
     var msg_EN = "Dragonfly Doji\nMirip dengan hari Doji lainnya, Doji khusus ini juga secara rutin muncul pada momen-momen penting pasar. Ini adalah Doji khusus yang harga pembukaan dan penutupannya berada pada harga tertinggi pada hari tertentu."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "DD"
+    var label_EN = "DD buy"
     var label_CN = "蜻蜓十字"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -538,7 +538,7 @@ if C_HaramiCrossBullish and HaramiCrossInput and showBullishSignal
     var msg_EN = "Harami Cross\nPola kandil ini adalah variasi dari pola Bullish Harami. Pola ini ditemukan selama tren turun. Pola kandil dua hari terdiri dari kandil Doji yang seluruhnya tercakup dalam badan kandil yang dulunya berbadan merah ."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "HC"
+    var label_EN = "HC buy"
     var label_CN = "十字胎"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -551,7 +551,7 @@ if C_HaramiCrossBearish and HaramiCrossInput and showBearishSignal
     var msg_EN = "Harami Cross\nPola kandil ini adalah variasi dari pola Harami Bearish. Pola ini ditemukan selama tren naik. Ini adalah pola kandil dua hari dengan kandil Doji yang seluruhnya tercakup dalam badan yang dulunya merupakan kandil berbadan hijau Doji menunjukkan bahwa beberapa keragu-raguan telah memasuki pikiran penjual, dan pola tersebut mengisyaratkan bahwa tren mungkin akan berbalik."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "HC"
+    var label_EN = "HC sell"
     var label_CN = "十字胎"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -564,7 +564,7 @@ if C_HaramiBullish and HaramiInput and showBullishSignal
     var msg_EN = "Harami\nPola kandil dua hari ini terdiri dari kandil hijau berbadan kecil yang seluruhnya tercakup dalam badan kandil yang dulunya berbadan merah."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "BH"
+    var label_EN = "BH buy"
     var label_CN = "身怀六甲"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -577,7 +577,7 @@ if C_HaramiBearish and HaramiInput and showBearishSignal
     var msg_EN = "Harami\nIni adalah pola kandil dua hari dengan kandil kecil berbadan merah yang seluruhnya tercakup dalam badan kandil yang dulunya merupakan kandil berbadan hijau."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "BH"
+    var label_EN = "BH sell"
     var label_CN = "身怀六甲"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -591,7 +591,7 @@ if C_LongLowerShadowBullish and LongLowerShadowInput and showBullishSignal
     var msg_EN = "Bayangan Bawah Panjang\nUntuk menunjukkan dominasi penjual pada bagian pertama sesi, kandil akan menampilkan bayangan bawah panjang dan bayangan atas pendek, sehingga menurunkan harga."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "LLS"
+    var label_EN = "LLS buy"
     var label_CN = "长下影线"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -602,10 +602,10 @@ C_LongShadowPercent = 75.0
 C_LongUpperShadowBearish = C_UpShadow > C_Range/100*C_LongShadowPercent
 alertcondition(C_LongUpperShadowBearish, title = "Long Upper Shadow", message = "New Long Upper Shadow - Bearish pattern detected.")
 if C_LongUpperShadowBearish and LongUpperShadowInput and showBearishSignal
-    var msg_EN = "Bayangan Atas Panjang\nUntuk menunjukkan dominasi pembeli pada bagian pertama sesi, kandil akan menampilkan bayangan atas yang panjang, serta bayangan bawah yang pendek, sehingga menaikkan harga penawaran."
+    var msg_EN = "Long Upper Shadow\nUntuk menunjukkan dominasi pembeli pada bagian pertama sesi, kandil akan menampilkan bayangan atas yang panjang, serta bayangan bawah yang pendek, sehingga menaikkan harga penawaran."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "LUS"
+    var label_EN = "LUS sell"
     var label_CN = "长上影线"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -620,7 +620,7 @@ if C_SpinningTopWhite and SpinningTopWhiteInput and showNeutralSignal
     var msg_EN = "Spinning Top Putih\nSpinning top putih adalah garis kandil yang kecil, berbadan hijau, dan memiliki bayangan (atas dan bawah) yang melebihi panjang badan kandil. Seringkali menandakan keragu-raguan antara pembeli dan penjual."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "STW"
+    var label_EN = "STW tahan"
     var label_CN = "纺锤阳线"
 
     _getNeutralLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -635,7 +635,7 @@ if C_SpinningTopBlack and SpinningTopBlackInput and showNeutralSignal
     var msg_EN = "Spinning Top Black\nSpinning top hitam adalah garis kandil yang kecil, bertubuh merah, dan memiliki bayangan (atas dan bawah) yang akhirnya melebihi panjang badan kandil. Seringkali ini menandakan keragu-raguan."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "STB"
+    var label_EN = "STB tahan"
     var label_CN = "纺锤阴线"
 
     _getNeutralLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -653,7 +653,7 @@ if C_ThreeWhiteSoldiersBullish and ThreeWhiteSoldiersInput and showBullishSignal
     var msg_EN = "Tiga Tentara Putih\nPola pembalikan bullish ini terdiri dari tiga candle hijau bertubuh panjang yang berurutan. Masing-masing candle dibuka di dalam candle sebelumnya dan penutupannya mendekati harga tertinggi harian."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "3WS"
+    var label_EN = "3WS buy"
     var label_CN = "红三兵"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -671,7 +671,7 @@ if C_ThreeBlackCrowsBearish and ThreeBlackCrowsInput and showBearishSignal
     var msg_EN = "Three Black Crows\nIni adalah pola pembalikan bearish yang terdiri dari tiga candle panjang berbadan merah yang berurutan. Untuk masing-masing candle ini, setiap hari dibuka dalam body hari sebelumnya dan ditutup pada atau mendekati harga terendahnya."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "3BC"
+    var label_EN = "3BC sell"
     var label_CN = "三只乌鸦"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -684,7 +684,7 @@ if C_EngulfingBullish and BullishEngulfingInput and showBullishSignal
     var msg_EN = "Engulfing\nDi akhir suatu tren menurun, kemungkinan besar akan terjadi pola pembalikan. Untuk membedakan hari pertama, pola kandil ini menggunakan badan kecil, diikuti dengan hari di mana badan kandil sepenuhnya mengambil alih badan hari itu sebelumnya, dan ditutup dalam arah yang berlawanan dengan tren. Meskipun mirip dengan pola grafik pembalikan luar, pola ini tidak penting untuk sepenuhnya melampaui kisaran (tinggi ke rendah), melainkan hanya pembukaan dan penutupan."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "BE"
+    var label_EN = "BE buy"
     var label_CN = "上涨吞没"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -697,7 +697,7 @@ if C_EngulfingBearish and BearishEngulfingInput and showBearishSignal
     var msg_EN = "Engulfing\nPada akhir tren naik tertentu, pola pembalikan kemungkinan besar akan muncul. Pada hari pertama, pola kandil ini menggunakan badan kecil. Kemudian diikuti oleh hari di mana badan kandil sepenuhnya mengambil alih badan hari itu Meskipun mirip dengan pola grafik pembalikan luar, pola ini tidak penting untuk sepenuhnya melampaui kisaran (tinggi ke rendah), melainkan hanya pembukaan dan penutupan."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "BE"
+    var label_EN = "BE sell"
     var label_CN = "下跌吞没"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -710,7 +710,7 @@ if C_AbandonedBabyBullish and BullishAbandonedBabyInput and showBullishSignal
     var msg_EN = "Abandoned Baby\nPola kandil ini cukup jarang terjadi dalam hal pola pembalikan. Pola pertama adalah kandil turun yang besar. Berikutnya adalah kandil doji yang memiliki celah di bawah kandil sebelumnya. Kandil doji kemudian diikuti oleh kandil lainnya yang terbuka lebih tinggi dan dengan cepat bergerak ke atas."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "AB"
+    var label_EN = "AB buy"
     var label_CN = "看涨弃婴"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -723,7 +723,7 @@ if C_AbandonedBabyBearish and AbandonedBabyInput and showBearishSignal
     var msg_EN = "Bayi Terbengkalai\nBayi terbengkalai yang bearish adalah pola kandil tertentu yang sering kali menandakan tren pembalikan turun dalam hal harga sekuritas. Ini terbentuk ketika kesenjangan muncul antara harga terendah kandil mirip doji dan kandil sehari sebelumnya Candlestick sebelumnya berwarna hijau, tinggi, dan memiliki bayangan yang kecil. Candle doji juga dibuntuti oleh celah antara titik harga terendahnya dan titik harga tertinggi dari candle berikutnya, yang berwarna merah, tinggi dan juga memiliki bayangan kecil. Bayangan candle doji harus benar-benar gap baik di bawah atau di atas bayangan hari pertama dan ketiga untuk mendapatkan efek pola bayi yang ditinggalkan."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "AB"
+    var label_EN = "AB sell"
     var label_CN = "弃婴"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -739,7 +739,7 @@ if C_TriStarBullish and TriStarInput and showBullishSignal
     var msg_EN = "Tri-Star\nPola kandil TriStar yang bullish dapat terbentuk ketika tiga kandil doji muncul berturut-turut di ujung tren turun yang diperpanjang. Kandil doji pertama menandai keragu-raguan antara bullish dan bearish. Doji kedua memiliki celah pada arah tren tersebut tren terdepan. Yang ketiga mengubah sikap pasar setelah kandil dibuka ke arah yang berlawanan dengan tren. Setiap kandil doji memiliki bayangan, semuanya relatif dangkal, yang menandakan penurunan volatilitas sementara."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "3S"
+    var label_EN = "3S tahan"
     var label_CN = "底部三星"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -755,7 +755,7 @@ if C_TriStarBearish and BearishTriStarInput and showBearishSignal
     var msg_EN = "Tri-Star\nPola khusus ini dapat terbentuk ketika tiga kandil doji muncul berturut-turut di akhir tren naik yang diperpanjang. Kandil doji pertama menandai keragu-raguan antara bullish dan bearish. Doji kedua memiliki celah dalam arah tren utama. ketiga mengubah sikap pasar setelah kandil dibuka ke arah yang berlawanan dengan tren.Setiap kandil doji memiliki bayangan, semuanya relatif dangkal, yang menandakan pengurangan volatilitas untuk sementara."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "3S"
+    var label_EN = "3S sell"
     var label_CN = "顶部三星"
 
     _getBearishLabel(msg_EN, msg_CN, label_EN, label_CN)
@@ -772,7 +772,7 @@ if C_KickingBullish and KickingInput and showBullishSignal
     var msg_EN = "Menendang\nCandlestick hari pertama adalah candlestick marubozu bearish yang hampir tidak memiliki bayangan atas atau bawah dan harga dibuka pada harga tertinggi hari itu dan ditutup pada harga terendah hari itu. Hari kedua adalah pola marubozu bullish, dengan hampir tidak ada bayangan atas atau bayangan bawah dan di mana harga dibuka pada harga terendah hari itu dan ditutup pada harga tertinggi hari itu. Selain itu, gap hari kedua naik secara luas dan dibuka di atas harga pembukaan hari sebelumnya. Gap atau jendela ini, sebagaimana orang Jepang menyebutnya, terletak antara kandil bullish hari pertama dan hari kedua."
     var msg_CN = "翻译中……！"
 
-    var label_EN = "K"
+    var label_EN = "K buy"
     var label_CN = "不知道咋翻译"
 
     _getBullishLabel(msg_EN, msg_CN, label_EN, label_CN)
